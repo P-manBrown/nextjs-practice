@@ -14,7 +14,11 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Learn to <Link href="posts/firstPost">Next.js!</Link>
+          Learn to <Link href="/posts/firstPost">
+            <a>
+              Next.js!
+            </a>
+          </Link>
         </h1>
 
         <p className={styles.description}>
@@ -61,7 +65,7 @@ export default function Home() {
         >
           Powered by{' '}
           <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            <Image src="/pb-logo.jpg" alt="P-manBrown Logo" width={30} height={30} />
           </span>
         </a>
       </footer>

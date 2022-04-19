@@ -20,6 +20,15 @@ export async function getStaticProps() {
   }
 }
 
+// SSRの場合
+// export async function getServerSideProps(context) {
+//   return {
+//     props: {
+//       // コンポーネントに渡すデータを記述
+//     }
+//   }
+// }
+
 
 export default function Home({ allPostsData }) {
   return (

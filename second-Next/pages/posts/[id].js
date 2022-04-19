@@ -16,6 +16,12 @@ export async function getStaticPaths() {
   };
 }
 
+// getStaticPathsはgetStaticPropsと同時に使用する必要がある
+// 外部のデータを取得する必要があるため
+export async function getStaticProps({ params }) {
+  
+}
+
 export default function Post() {
   return (
     <Layout>

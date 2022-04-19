@@ -3,6 +3,8 @@ import path from "path";
 import fs from "fs";
 // メタデータを分析をするためにインポート
 import matter from "gray-matter";
+import { remark } from "remark";
+import html from "remark-html";
 
 // カレントディレクトリとpostsのpathを結合→cwd/posts
 const postsDirectory = path.join(process.cwd(), "posts");
@@ -61,4 +63,25 @@ export function getAllPostIds() {
       }
     ]
   */
+}
+
+// idに基づいて記事のデータを取得するための関数
+export async function getPostData(id) {
+  // pwd/posts/ファイル名.mdをfullPathに格納
+  const fullPath = path.join(postsDirectory, `${id}.md`);
+  // fullPathを指定して.mdファイルの中身を読み込む
+  const fileContent = fs.readFileSync(fullPath, "utf8");
+
+  const matterResult = matter(fileContent)
+  // matterResult.contentは記事の中身
+  const blogContent = await remark().use(html).process(matterResult.content);
+
+  // blogContentをstringにする
+  const blogContentHTML = blogContent.toString();
+
+  return {
+    id,
+    blogContentHTML,
+    ...matterResult.data,
+  };
 }

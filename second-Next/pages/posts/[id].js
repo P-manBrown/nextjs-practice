@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import Layout from "../../components/Layout";
 import { getAllPostIds, getPostData } from "../../lib/post";
 import utilStyles from '../../styles/utils.module.css';
@@ -34,7 +33,7 @@ export default function Post({ postData }) {
   return (
     <Layout>
       <Head>
-        <title>Article</title>
+        <title>{postData.title}</title>
       </Head>
       <article>
 
@@ -45,7 +44,6 @@ export default function Post({ postData }) {
         {/* reactのdangerouslySetInnerHTMLを使用する */}
         {/* 名前のとおりそのままでは危険。本来はサニタイズが必要 */}
         <div dangerouslySetInnerHTML={{__html: postData.blogContentHTML}} />
-        <Link href="/">ホームへ戻る</Link>
     </Layout>
   );
 }

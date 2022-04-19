@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import Layout, { siteTitle } from '../components/Layout'
 import { getPostsData } from '../lib/post'
 import styles from '../styles/Home.module.css'
 import utilStyles from '../styles/utils.module.css'
@@ -32,9 +32,10 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
   return (
-    <Layout>
+    // homeがついている場合にはプロフィール画像を大きく表示させるためにhomeという変数を付与
+    <Layout home>
       <Head>
-        <title>Article Index</title>
+        <title>{siteTitle}</title>
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <p>未経験からエンジニア転職を目指して日々学習に励んでいます。</p>

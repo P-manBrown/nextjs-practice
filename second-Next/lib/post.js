@@ -35,3 +35,30 @@ export function getPostsData() {
   // getPostsDataに関する返り値
   return allPostData;
 }
+
+// 動的ルーティングを実現するためにgetStaticPathのreturnで使用するpathを取得するための関数
+export function getAllPostIds() {
+  const fileNames = fs.readdirSync(postsDirectory);
+  return fileNames.map((fileName) => {
+    return {
+      params: {
+        // 動的ルーティングにidを指定しているため、idをreturnする
+        id: fileName.replace(/\.md$/, ""),
+      },
+    };
+  });
+  /* 以下のような形で値を返す
+    [
+      {
+        params: {
+          id: "react"
+        }
+      },
+      {
+        params: {
+          id: "sql"
+        }
+      }
+    ]
+  */
+}

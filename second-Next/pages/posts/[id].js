@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Layout from "../../components/Layout";
 import { getAllPostIds, getPostData } from "../../lib/post";
+import utilStyles from '../../styles/utils.module.css';
 
 // 動的ルーティングのためにはgetStaticPathsを使用する必要がある。
 // getStaticPathsにはデータのPathが必要になる→Post.jsでPathを返す関数を準備する
@@ -35,12 +36,15 @@ export default function Post({ postData }) {
       <Head>
         <title>Article</title>
       </Head>
-        <h1>{postData.title}</h1>
-        <br />
-        <small>{postData.date}</small>
-        <br />
-        <p>{postData.blogContentHTML}</p>
+      <article>
 
+      </article>
+        <h1 className={utilStyles.headingX1}>{postData.title}</h1>
+        <div className={utilStyles.lightText}>{postData.date}</div>
+        {/* HTMLを表示させるための記述 */}
+        {/* reactのdangerouslySetInnerHTMLを使用する */}
+        {/* 名前のとおりそのままでは危険。本来はサニタイズが必要 */}
+        <div dangerouslySetInnerHTML={{__html: postData.blogContentHTML}} />
         <Link href="/">ホームへ戻る</Link>
     </Layout>
   );

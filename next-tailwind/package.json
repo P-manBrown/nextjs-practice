@@ -1,0 +1,48 @@
+{
+  "name": "next-tailwind",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node --inspect=0.0.0.0:9229 .yarn/__virtual__/next-virtual-fbc791505a/0/cache/next-npm-12.1.6-c0598c390e-670d544fd4.zip/node_modules/next/dist/bin/next",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint --dir src",
+    "lint:fix": "next lint src --fix",
+    "format": "prettier '**/*' --write --ignore-unknown",
+    "postinstall": "husky install"
+  },
+  "dependencies": {
+    "next": "12.1.6",
+    "react": "18.1.0",
+    "react-dom": "18.1.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.0",
+    "@commitlint/config-conventional": "^17.0.0",
+    "@commitlint/cz-commitlint": "^17.0.0",
+    "commitizen": "^4.2.4",
+    "eslint": "8.15.0",
+    "eslint-config-next": "12.1.6",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": ">=6",
+    "inquirer": "^8.2.4",
+    "lint-staged": ">=10",
+    "prettier": "2.6.2",
+    "prettier-plugin-tailwindcss": "^0.1.11"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,tsx}": [
+      "eslint --fix"
+    ],
+    "**/*": [
+      "prettier --write --ignore-unknown"
+    ]
+  },
+  "packageManager": "yarn@3.2.0"
+}

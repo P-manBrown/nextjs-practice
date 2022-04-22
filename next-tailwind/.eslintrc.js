@@ -14,11 +14,11 @@ module.exports = {
           'object',
           'type',
         ],
+        'newlines-between': 'always',
         alphabetize: {
           order: 'asc',
         },
       },
     ],
-    'unused-imports/no-unused-imports': 'error',
   },
 }

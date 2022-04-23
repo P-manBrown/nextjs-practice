@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import Layout from '@/components/Layout'
 
-const Contact = () => {
+export default function Contact() {
   return (
     <Layout title="Contact">
       <div className="w-80 rounded bg-white p-8 text-center shadow-lg">
@@ -81,4 +81,3 @@ const Contact = () => {
     </Layout>
   )
 }
-export default Contact

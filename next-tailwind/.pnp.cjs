@@ -42,7 +42,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-next", "virtual:352944609afe3476abf297421a0b52bcddcb478c1f08875d9db4a2842aca0973369cba3224259ad2af44da6fed020f6e2f32574f9363a645a233c357e9c8529b#npm:12.1.6"],\
             ["eslint-config-prettier", "virtual:352944609afe3476abf297421a0b52bcddcb478c1f08875d9db4a2842aca0973369cba3224259ad2af44da6fed020f6e2f32574f9363a645a233c357e9c8529b#npm:8.5.0"],\
             ["eslint-plugin-unused-imports", "virtual:352944609afe3476abf297421a0b52bcddcb478c1f08875d9db4a2842aca0973369cba3224259ad2af44da6fed020f6e2f32574f9363a645a233c357e9c8529b#npm:2.0.0"],\
-            ["husky", "npm:8.0.1"],\
             ["inquirer", "npm:8.2.4"],\
             ["lint-staged", "npm:12.4.1"],\
             ["next", "virtual:352944609afe3476abf297421a0b52bcddcb478c1f08875d9db4a2842aca0973369cba3224259ad2af44da6fed020f6e2f32574f9363a645a233c357e9c8529b#npm:12.1.6"],\
@@ -3694,15 +3693,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["husky", [\
-        ["npm:8.0.1", {\
-          "packageLocation": "./.yarn/cache/husky-npm-8.0.1-85fede8470-943a73a13d.zip/node_modules/husky/",\
-          "packageDependencies": [\
-            ["husky", "npm:8.0.1"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["iconv-lite", [\
         ["npm:0.4.24", {\
           "packageLocation": "./.yarn/cache/iconv-lite-npm-0.4.24-c5c4ac6695-bd9f120f5a.zip/node_modules/iconv-lite/",\
@@ -5143,7 +5133,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-next", "virtual:352944609afe3476abf297421a0b52bcddcb478c1f08875d9db4a2842aca0973369cba3224259ad2af44da6fed020f6e2f32574f9363a645a233c357e9c8529b#npm:12.1.6"],\
             ["eslint-config-prettier", "virtual:352944609afe3476abf297421a0b52bcddcb478c1f08875d9db4a2842aca0973369cba3224259ad2af44da6fed020f6e2f32574f9363a645a233c357e9c8529b#npm:8.5.0"],\
             ["eslint-plugin-unused-imports", "virtual:352944609afe3476abf297421a0b52bcddcb478c1f08875d9db4a2842aca0973369cba3224259ad2af44da6fed020f6e2f32574f9363a645a233c357e9c8529b#npm:2.0.0"],\
-            ["husky", "npm:8.0.1"],\
             ["inquirer", "npm:8.2.4"],\
             ["lint-staged", "npm:12.4.1"],\
             ["next", "virtual:352944609afe3476abf297421a0b52bcddcb478c1f08875d9db4a2842aca0973369cba3224259ad2af44da6fed020f6e2f32574f9363a645a233c357e9c8529b#npm:12.1.6"],\

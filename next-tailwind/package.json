@@ -8,8 +8,7 @@
     "start": "next start",
     "lint": "next lint --dir src",
     "lint:fix": "next lint --dir src --fix",
-    "format": "prettier '**/*' --write --ignore-unknown",
-    "postinstall": "husky install"
+    "format": "prettier '**/*' --write --ignore-unknown"
   },
   "dependencies": {
     "next": "12.1.6",
@@ -27,7 +26,6 @@
     "eslint-config-next": "12.1.6",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-unused-imports": "^2.0.0",
-    "husky": ">=6",
     "inquirer": "^8.2.4",
     "lint-staged": ">=10",
     "postcss": "^8.4.13",

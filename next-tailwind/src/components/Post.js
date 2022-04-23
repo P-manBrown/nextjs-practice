@@ -1,13 +1,15 @@
-const Post = ({ post }) => {
+import Link from 'next/link'
+
+export default function Post({ post }) {
   return (
     <div>
       <span>{post.id}</span>
       {' : '}
-      <span className="cursor-pointer border-b border-blue-500 text-blue-500 hover:bg-gray-200">
-        {post.title}
-      </span>
+      <Link href={`/posts/${post.id}`}>
+        <span className="cursor-pointer border-b border-blue-500 text-blue-500 hover:bg-gray-200">
+          {post.title}
+        </span>
+      </Link>
     </div>
   )
 }
-
-export default Post

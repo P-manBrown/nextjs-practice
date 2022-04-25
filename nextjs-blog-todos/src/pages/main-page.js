@@ -4,7 +4,6 @@ import Cookie from 'universal-cookie'
 
 import Layout from '../components/Layout'
 
-
 const cookie = new Cookie()
 
 export default function MainPage() {

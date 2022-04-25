@@ -1,9 +1,9 @@
 {
-  "name": "sakuzyo",
+  "name": "nextjs-blog-todos",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node --inspect=0.0.0.0:9229 .yarn/__virtual__/next-virtual-5e1e126d05/0/cache/next-npm-12.1.6-c0598c390e-670d544fd4.zip/node_modules/next/dist/bin/next",
+    "dev": "node --inspect=0.0.0.0:9229 .yarn/__virtual__/next-virtual-35df2c2a80/0/cache/next-npm-12.1.6-c0598c390e-670d544fd4.zip/node_modules/next/dist/bin/next",
     "build": "next build",
     "start": "next start",
     "lint": "next lint --dir src",
@@ -11,6 +11,7 @@
     "format": "prettier '**/*' --write --ignore-unknown"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.5.2",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0"

@@ -52,7 +52,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier-plugin-tailwindcss", "virtual:fccd31c815a987092a51743baca81d263a32a59a86842aa587eec27191e6dc3c35f6e20de93a283eb0cd56a22dca9df2455c84c3cdc6ca15ad7c27f4dd9115c3#npm:0.1.11"],\
             ["react", "npm:18.1.0"],\
             ["react-dom", "virtual:fccd31c815a987092a51743baca81d263a32a59a86842aa587eec27191e6dc3c35f6e20de93a283eb0cd56a22dca9df2455c84c3cdc6ca15ad7c27f4dd9115c3#npm:18.1.0"],\
-            ["tailwindcss", "virtual:fccd31c815a987092a51743baca81d263a32a59a86842aa587eec27191e6dc3c35f6e20de93a283eb0cd56a22dca9df2455c84c3cdc6ca15ad7c27f4dd9115c3#npm:3.0.24"]\
+            ["swr", "virtual:fccd31c815a987092a51743baca81d263a32a59a86842aa587eec27191e6dc3c35f6e20de93a283eb0cd56a22dca9df2455c84c3cdc6ca15ad7c27f4dd9115c3#npm:1.3.0"],\
+            ["tailwindcss", "virtual:fccd31c815a987092a51743baca81d263a32a59a86842aa587eec27191e6dc3c35f6e20de93a283eb0cd56a22dca9df2455c84c3cdc6ca15ad7c27f4dd9115c3#npm:3.0.24"],\
+            ["universal-cookie", "npm:4.0.4"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -688,6 +690,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@tsconfig-node16-npm-1.0.2-1f43ab567a-ca94d36397.zip/node_modules/@tsconfig/node16/",\
           "packageDependencies": [\
             ["@tsconfig/node16", "npm:1.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/cookie", [\
+        ["npm:0.3.3", {\
+          "packageLocation": "./.yarn/cache/@types-cookie-npm-0.3.3-a5ddc16db3-450c930d79.zip/node_modules/@types/cookie/",\
+          "packageDependencies": [\
+            ["@types/cookie", "npm:0.3.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1722,6 +1733,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["meow", "npm:8.1.2"],\
             ["split2", "npm:3.2.2"],\
             ["through2", "npm:4.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["cookie", [\
+        ["npm:0.4.2", {\
+          "packageLocation": "./.yarn/cache/cookie-npm-0.4.2-7761894d5f-a00833c998.zip/node_modules/cookie/",\
+          "packageDependencies": [\
+            ["cookie", "npm:0.4.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4600,7 +4620,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier-plugin-tailwindcss", "virtual:fccd31c815a987092a51743baca81d263a32a59a86842aa587eec27191e6dc3c35f6e20de93a283eb0cd56a22dca9df2455c84c3cdc6ca15ad7c27f4dd9115c3#npm:0.1.11"],\
             ["react", "npm:18.1.0"],\
             ["react-dom", "virtual:fccd31c815a987092a51743baca81d263a32a59a86842aa587eec27191e6dc3c35f6e20de93a283eb0cd56a22dca9df2455c84c3cdc6ca15ad7c27f4dd9115c3#npm:18.1.0"],\
-            ["tailwindcss", "virtual:fccd31c815a987092a51743baca81d263a32a59a86842aa587eec27191e6dc3c35f6e20de93a283eb0cd56a22dca9df2455c84c3cdc6ca15ad7c27f4dd9115c3#npm:3.0.24"]\
+            ["swr", "virtual:fccd31c815a987092a51743baca81d263a32a59a86842aa587eec27191e6dc3c35f6e20de93a283eb0cd56a22dca9df2455c84c3cdc6ca15ad7c27f4dd9115c3#npm:1.3.0"],\
+            ["tailwindcss", "virtual:fccd31c815a987092a51743baca81d263a32a59a86842aa587eec27191e6dc3c35f6e20de93a283eb0cd56a22dca9df2455c84c3cdc6ca15ad7c27f4dd9115c3#npm:3.0.24"],\
+            ["universal-cookie", "npm:4.0.4"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -6104,6 +6126,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["swr", [\
+        ["npm:1.3.0", {\
+          "packageLocation": "./.yarn/cache/swr-npm-1.3.0-3a8f9fadf5-e7a184f0d5.zip/node_modules/swr/",\
+          "packageDependencies": [\
+            ["swr", "npm:1.3.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:fccd31c815a987092a51743baca81d263a32a59a86842aa587eec27191e6dc3c35f6e20de93a283eb0cd56a22dca9df2455c84c3cdc6ca15ad7c27f4dd9115c3#npm:1.3.0", {\
+          "packageLocation": "./.yarn/__virtual__/swr-virtual-a3a622a9b2/0/cache/swr-npm-1.3.0-3a8f9fadf5-e7a184f0d5.zip/node_modules/swr/",\
+          "packageDependencies": [\
+            ["swr", "virtual:fccd31c815a987092a51743baca81d263a32a59a86842aa587eec27191e6dc3c35f6e20de93a283eb0cd56a22dca9df2455c84c3cdc6ca15ad7c27f4dd9115c3#npm:1.3.0"],\
+            ["@types/react", null],\
+            ["react", "npm:18.1.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["tailwindcss", [\
         ["npm:3.0.24", {\
           "packageLocation": "./.yarn/cache/tailwindcss-npm-3.0.24-76d1231da5-52a21192b7.zip/node_modules/tailwindcss/",\
@@ -6409,6 +6453,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["unique-slug", "npm:2.0.2"],\
             ["imurmurhash", "npm:0.1.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["universal-cookie", [\
+        ["npm:4.0.4", {\
+          "packageLocation": "./.yarn/cache/universal-cookie-npm-4.0.4-aa9b4bcfbf-bb2bafa7eb.zip/node_modules/universal-cookie/",\
+          "packageDependencies": [\
+            ["universal-cookie", "npm:4.0.4"],\
+            ["@types/cookie", "npm:0.3.3"],\
+            ["cookie", "npm:0.4.2"]\
           ],\
           "linkType": "HARD"\
         }]\

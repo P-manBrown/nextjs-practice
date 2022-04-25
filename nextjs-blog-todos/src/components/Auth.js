@@ -33,7 +33,7 @@ export default function Auth() {
           const options = { path: '/' }
           cookie.set('access_token', data.access, options)
         })
-        .router.push('/main-page')
+      router.push('/main-page')
     } catch (err) {
       alert(err)
     }

@@ -1,10 +1,31 @@
 import Link from 'next/link'
+import { useEffect } from 'react'
+import useSWR from 'swr'
 
 import Layout from '../components/Layout'
+import Task from '../components/Task'
+import { getAllTasksData } from '../lib/tasks'
 
-export default function TaskPage() {
+
+const fetcher = (url) => fetch(url).then((res) => res.json())
+const apiUrl = `${process.env.NEXT_PUBLIC_RESTAPI_URL}api/list-task/`
+
+export default function TaskPage({ staticFilteredTasks }) {
+  const { data: tasks, mutate } = useSWR(apiUrl, fetcher, {
+    fallbackData: staticFilteredTasks,
+  })
+  const filteredTasks = tasks?.sort(
+    (a, b) => new Date(b.created_at) - new Date(a.created_at)
+  )
+  useEffect(() => {
+    mutate()
+  }, [])
   return (
     <Layout title="Task page">
+      <ul>
+        {filteredTasks &&
+          filteredTasks.map((task) => <Task key={task.id} task={task} />)}
+      </ul>
       <Link href="/main-page">
         <div className="mt-12 flex cursor-pointer">
           <svg
@@ -26,4 +47,14 @@ export default function TaskPage() {
       </Link>
     </Layout>
   )
+}
+
+export async function getStaticProps() {
+  const staticFilteredTasks = await getAllTasksData()
+  return {
+    props: { staticFilteredTasks },
+    // useSWRとSSGのみでは表示内容が乖離すると見づらくなる
+    // ISRを使用することでhtmlが再生成されるようにすることで差異を減らすことが可能
+    revalidate: 3,
+  }
 }

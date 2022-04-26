@@ -1,10 +1,16 @@
 import Link from 'next/link'
 
 import Layout from '../components/Layout'
+import Post from '../components/Post'
+import { getAllPostsData } from '../lib/posts'
 
-export default function BlogPage() {
+export default function BlogPage({ filteredPosts }) {
   return (
     <Layout title="Blog page">
+      <ul>
+        {filteredPosts &&
+          filteredPosts.map((post) => <Post key={post.id} post={post} />)}
+      </ul>
       <Link href="/main-page">
         <div className="mt-12 flex cursor-pointer">
           <svg
@@ -26,4 +32,11 @@ export default function BlogPage() {
       </Link>
     </Layout>
   )
+}
+
+export async function getStaticProps() {
+  const filteredPosts = await getAllPostsData()
+  return {
+    props: { filteredPosts },
+  }
 }

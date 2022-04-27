@@ -6,7 +6,6 @@ import Layout from '../components/Layout'
 import Task from '../components/Task'
 import { getAllTasksData } from '../lib/tasks'
 
-
 const fetcher = (url) => fetch(url).then((res) => res.json())
 const apiUrl = `${process.env.NEXT_PUBLIC_RESTAPI_URL}api/list-task/`
 
@@ -24,7 +23,9 @@ export default function TaskPage({ staticFilteredTasks }) {
     <Layout title="Task page">
       <ul>
         {filteredTasks &&
-          filteredTasks.map((task) => <Task key={task.id} task={task} />)}
+          filteredTasks.map((task) => (
+            <Task key={task.id} task={task} taskDeleted={mutate} />
+          ))}
       </ul>
       <Link href="/main-page">
         <div className="mt-12 flex cursor-pointer">

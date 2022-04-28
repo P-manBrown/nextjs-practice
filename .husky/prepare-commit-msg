@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-cd nextjs-blog-todos
+cd nextjs-testing
 exec < /dev/tty && yarn cz --hook || true

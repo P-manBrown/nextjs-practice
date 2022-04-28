@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "ms-vscode-remote.remote-containers",
+    "PulkitGangwar.nextjs-snippets",
+    "dsznajder.es7-react-js-snippets",
+    "csstools.postcss",
+    "arcanis.vscode-zipfs",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode"
+  ]
+}

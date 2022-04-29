@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
 
-cd nextjs-testing
-exec < /dev/tty && yarn cz --hook || true
+# . "$(dirname -- "$0")/_/husky.sh"
+
+# cd next-tailwind
+# exec < /dev/tty && yarn cz --hook || true

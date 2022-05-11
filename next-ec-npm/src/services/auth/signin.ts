@@ -1,9 +1,9 @@
 // typesは後ほど定義
-import { ApiContext, User } from 'types'
+import { ApiContext, User } from 'types/data'
 // 先ほど定義したsrc/utils/index.tsから読み込み
-import { fetcher } from 'utils'
+import { fetcher } from 'utils/index'
 
-export type SigninParams= {
+export type SigninParams = {
   /**
    * ユーザー名
    * サンプルユーザーのユーザー名は "user"
@@ -12,7 +12,7 @@ export type SigninParams= {
   /**
    * パスワード
    * サンプルユーザーのパスワードは "password"
-  */
+   */
   password: string
 }
 

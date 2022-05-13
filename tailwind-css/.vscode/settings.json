@@ -5,4 +5,22 @@
   "files.associations": {
     "*.css": "tailwindcss"
   },
+  "cSpell.words": [
+    "anymatch",
+    "camelcase",
+    "cssesc",
+    "didyoumean",
+    "extglob",
+    "fastq",
+    "jiti",
+    "lilconfig",
+    "picocolors",
+    "picomatch",
+    "pify",
+    "readdirp",
+    "reusify",
+    "tailwindcss",
+    "thenify",
+    "wrappy"
+  ],
 }

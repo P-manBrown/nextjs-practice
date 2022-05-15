@@ -534,3 +534,7 @@ video {
 .underline {
   text-decoration-line: underline;
 }
+
+body {
+  background-color: blue;
+}

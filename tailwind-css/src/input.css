@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.easy-button {
+  padding: 8px 16px;
+  background-color: blue;
+  color: white;
+  border-radius: 4px;
+  font: bold;
+  margin-left: 40px;
+}
+
+.easy-button:hover {
+  background-color: red;
+}

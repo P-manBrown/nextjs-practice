@@ -14,3 +14,17 @@
 .easy-button:hover {
   background-color: red;
 }
+
+/* スタイルの使い回し */
+
+.btn {
+  @apply font-bold py-2 px-4 rounded ml-10;
+}
+
+.btn-blue {
+  @apply bg-blue-500 text-white;
+}
+
+.btn-blue:hover {
+  @apply bg-blue-600;
+}

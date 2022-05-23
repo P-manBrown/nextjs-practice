@@ -550,11 +550,6 @@ video {
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
-.bg-primary-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(66 153 225 / var(--tw-bg-opacity));
-}
-
 .p-16 {
   padding: 4rem;
 }
@@ -567,6 +562,10 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.font-poppins {
+  font-family: Poppins, sans-serif;
 }
 
 .text-3xl {

@@ -10,6 +10,9 @@ module.exports = {
       //     500: "#4299e1"
       //   }
       // },
+      colors: {
+        body: "#050505",
+      }
     },
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],

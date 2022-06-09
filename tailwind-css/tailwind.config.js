@@ -14,7 +14,8 @@ module.exports = {
         body: "#050505",
         "selected-text": "#A3A3FF",
         theme: "#5c318c",
-        secondary: "#9191a4"
+        secondary: "#9191a4",
+        badge: "#3F3F51"
       }
     },
     fontFamily: {

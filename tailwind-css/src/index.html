@@ -218,7 +218,10 @@
               justify-center
               lg:justify-start
               flex-wrap
-              space-x-32
+              lg:space-x-32
+              hover:border-yellow-300
+              transition-all
+              duration-300
             "
           >
             <!-- 言語のロゴ -->
@@ -237,7 +240,16 @@
               </svg>
             </div>
             <!-- スキル説明 -->
-            <div>
+            <div 
+              class="
+                text-center
+                flex
+                flex-wrap
+                justify-center
+                lg:text-left
+                lg:block
+              "
+            >
               <h3 class="text-3xl font-semibold">JavaScript</h3>
               <div 
                 class="
@@ -254,7 +266,7 @@
                 <div class="badge">Webサイト制作</div>
                 <div class="badge">フロントエンド開発</div>
               </div>
-              <p>
+              <p class="text-secondary">
                 JavaScriptエンジニアです。普段はReactを使用して開発現場で働いています。
               </p>
             </div>

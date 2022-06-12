@@ -413,7 +413,8 @@
       id="contact"
       class="
         container
-        mt-64
+        mt-52
+        mb-20
         flex
         justify-between
         items-center
@@ -430,11 +431,34 @@
           私の経歴が気になる方はご一報ください。即対応します。
         </p>
         <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-16">
-          <div>
+          <div class="space-y-12">
             <div>
-              <label class="text-white block mb-6 text-xl font-bold">お名前</label>
+              <label class="text-white block mb-6 text-xl font-bold">
+                お名前
+              </label>
               <input type="text" class="w-full border border-inpuBorder bg-input px-4 py-4">
             </div>
+            <div>
+              <label class="text-white block mb-6 text-xl font-bold">
+                メールアドレス
+              </label>
+              <input type="text" class="w-full border border-inpuBorder bg-input px-4 py-4">
+            </div>
+            <div>
+              <label class="text-white block mb-6 text-xl font-bold">
+                メッセージ
+              </label>
+              <input type="text" class="w-full border border-inpuBorder bg-input px-4 py-4">
+            </div>
+            <button 
+            class="
+              px-8 py-3
+              bg-theme font-bold rounded-lg 
+              hover:bg-purple-600 transition-all duration-300
+              "
+            >
+              送信
+            </button>
           </div>
         </div>
       </section>

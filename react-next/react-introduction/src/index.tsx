@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Hello from './components/Hello';
 import reportWebVitals from './reportWebVitals';
+import Message from './components/Message';
+import Parent from './components/ContainerSample';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -10,6 +12,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Hello />
+    <Message />
+    <Parent />
   </React.StrictMode>
 );
 

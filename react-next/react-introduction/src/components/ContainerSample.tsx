@@ -1,4 +1,9 @@
-const Container = (props: {title: string; children: React.ReactElement}) => {
+type ContainerProps = {
+  title: string
+  children: React.ReactNode
+}
+
+const Container = (props: ContainerProps): JSX.Element => {
   const {title, children} = props
 
   return (
@@ -10,9 +15,11 @@ const Container = (props: {title: string; children: React.ReactElement}) => {
   )
 }
 
-const Parent = () => {
+const Parent = (): JSX.Element => {
   return (
+    // 以下のtitleはpropsとして子に渡される
     <Container title="Hello">
+      {/* 以下がchildrenとして子に渡される */}
       <p>ここの部分が背景色で囲まれます。</p>
     </Container>
   )

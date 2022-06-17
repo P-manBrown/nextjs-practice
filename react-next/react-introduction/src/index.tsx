@@ -5,6 +5,7 @@ import Hello from './components/Hello';
 import reportWebVitals from './reportWebVitals';
 import Message from './components/Message';
 import Parent from './components/ContainerSample';
+import Page from './components/ContextSample';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -14,6 +15,7 @@ root.render(
     <Hello />
     <Message />
     <Parent />
+    <Page />
   </React.StrictMode>
 );
 

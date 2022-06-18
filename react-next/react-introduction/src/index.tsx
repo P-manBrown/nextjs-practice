@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import Message from './components/Message';
 import Parent from './components/ContainerSample';
 import Page from './components/ContextSample';
+import Counter from './components/Counter';
+import CounterReducer from './components/CounterReducer';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -16,6 +18,8 @@ root.render(
     <Message />
     <Parent />
     <Page />
+    <Counter initialValue={100} />
+    <CounterReducer initialValue={10} />
   </React.StrictMode>
 );
 

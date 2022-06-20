@@ -12,6 +12,7 @@ import { ParentMemo } from './components/ParentMemo';
 import { CountCallback } from './components/CountCallback';
 import { Clock } from './components/Clock';
 import ParentUseContext from './components/UseContext';
+import ImageUploader from './components/ImageUploader';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -28,6 +29,7 @@ root.render(
     <CountCallback />
     <Clock />
     <ParentUseContext />
+    <ImageUploader />
   </React.StrictMode>
 );
 

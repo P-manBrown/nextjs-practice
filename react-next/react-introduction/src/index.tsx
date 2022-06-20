@@ -11,6 +11,7 @@ import CounterReducer from './components/CounterReducer';
 import { ParentMemo } from './components/ParentMemo';
 import { CountCallback } from './components/CountCallback';
 import { Clock } from './components/Clock';
+import ParentUseContext from './components/UseContext';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -26,6 +27,7 @@ root.render(
     <ParentMemo />
     <CountCallback />
     <Clock />
+    <ParentUseContext />
   </React.StrictMode>
 );
 
